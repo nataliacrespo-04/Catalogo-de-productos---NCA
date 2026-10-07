@@ -1,4 +1,3 @@
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     background-color: #fff5f7;
@@ -6,8 +5,6 @@ body {
     margin: 0;
 }
 
-
-/* Encabezado */
 header {
     background-color: #f8b6c8;
     text-align: center;
@@ -19,16 +16,16 @@ header h1 {
     font-size: 32px;
 }
 
-
-/* Menú */
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav li {
-    display: inline;
-    margin: 10px;
+    margin: 0;
 }
 
 nav a {
@@ -37,16 +34,12 @@ nav a {
     font-weight: bold;
 }
 
-
-/* Contenido principal */
 main {
     width: 90%;
     max-width: 1000px;
     margin: 30px auto;
 }
 
-
-/* Secciones */
 section {
     background-color: white;
     padding: 25px;
@@ -58,8 +51,6 @@ section h2 {
     text-align: center;
 }
 
-
-/* Tarjetas de productos */
 .contenedor-tarjetas {
     display: flex;
     flex-wrap: wrap;
@@ -84,8 +75,6 @@ section h2 {
     font-weight: bold;
 }
 
-
-/* Formulario */
 form {
     max-width: 500px;
     margin: auto;
@@ -114,8 +103,6 @@ textarea {
     resize: vertical;
 }
 
-
-/* Botón */
 button {
     display: block;
     margin: 20px auto 0;
@@ -131,10 +118,46 @@ button:hover {
     background-color: #d87894;
 }
 
-
-/* Pie de página */
 footer {
     background-color: #f8b6c8;
     text-align: center;
     padding: 15px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        width: 90%;
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .contenedor-tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
 }
