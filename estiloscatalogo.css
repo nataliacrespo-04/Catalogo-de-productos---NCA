@@ -1,0 +1,140 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f7;
+    color: #4a3035;
+    margin: 0;
+}
+
+
+/* Encabezado */
+header {
+    background-color: #f8b6c8;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+
+/* Menú */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a3035;
+    font-weight: bold;
+}
+
+
+/* Contenido principal */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+/* Secciones */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+
+/* Tarjetas de productos */
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tarjeta {
+    background-color: #fff0f3;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 8px #d8b8c0;
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+}
+
+.tarjeta p:last-child {
+    font-weight: bold;
+}
+
+
+/* Formulario */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d8b8c0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+
+/* Botón */
+button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 25px;
+    background-color: #e88fa8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d87894;
+}
+
+
+/* Pie de página */
+footer {
+    background-color: #f8b6c8;
+    text-align: center;
+    padding: 15px;
+}
