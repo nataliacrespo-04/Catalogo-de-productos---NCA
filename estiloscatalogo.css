@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     background-color: #fff5f7;
@@ -124,6 +125,50 @@ footer {
     padding: 15px;
 }
 
+/* Modo oscuro */
+
+body.oscuro {
+    background-color: #1e293b;
+    color: #f1f5f9;
+}
+
+body.oscuro header,
+body.oscuro footer {
+    background-color: #334155;
+    color: #f1f5f9;
+}
+
+body.oscuro nav a {
+    color: #f1f5f9;
+}
+
+body.oscuro section {
+    background-color: #273449;
+    color: #f1f5f9;
+}
+
+body.oscuro .tarjeta {
+    background-color: #334155;
+    color: #f1f5f9;
+    box-shadow: 0 3px 8px #111827;
+}
+
+body.oscuro input,
+body.oscuro select,
+body.oscuro textarea {
+    background-color: #334155;
+    color: #f1f5f9;
+    border: 1px solid #94a3b8;
+}
+
+body.oscuro button {
+    background-color: #7c3aed;
+}
+
+body.oscuro button:hover {
+    background-color: #6d28d9;
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -133,6 +178,7 @@ footer {
     main {
         width: 90%;
         padding: 10px;
+        box-sizing: border-box;
     }
 
     section {

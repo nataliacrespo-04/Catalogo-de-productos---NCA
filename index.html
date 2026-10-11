@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -20,6 +21,10 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
+
+        <button type="button" id="boton-modo">
+            Cambiar modo oscuro
+        </button>
     </header>
 
     <main>
@@ -94,12 +99,12 @@
                 <p>Realiza tu pedido con nosotros.</p>
 
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre">
+                <input type="text" id="nombre" name="nombre" required>
 
                 <p>WhatsApp: 700 12345</p>
 
                 <label for="correo">Correo:</label>
-                <input type="email" id="correo" name="correo">
+                <input type="email" id="correo" name="correo" required>
 
                 <label for="producto">Producto:</label>
 
@@ -127,6 +132,8 @@
         <p>© 2026 Dulce Creación.</p>
         <p>Natalia Crespo Ayala</p>
     </footer>
+
+    <script src="catalogo.js"></script>
 
 </body>
 
