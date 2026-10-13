@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavanderia Burbujas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header id="inicio">
+        <h1>Lavanderia Burbujas</h1>
+        <p>Un delicado lavado</p>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#lavados">Nuestros lavados</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="lavados">
+            <h2>Nuestros lavados</h2>
+
+            <p>
+                Somos una familia que se enfoca en el cuidado y la limpieza
+                de tus prendas, tratándolas con el respeto y la delicadeza
+                que necesitas.
+            </p>
+
+            <ul>
+                <li>Lavado por kilo - Bs 15</li>
+                <li>Planchado de camisa - Bs 8</li>
+                <li>Lavado de edredon - Bs 35</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Deja tu encargo</h2>
+
+            <form>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="correo">Correo electronico:</label>
+                <input type="email" id="correo" required>
+
+                <label for="encargo">Tu encargo:</label>
+                <textarea id="encargo"></textarea>
+            </form>
+
+            <button type="button" id="btn-confirmar">
+                Confirmar encargo
+            </button>
+
+            <p id="mensaje" class="oculto"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Parcial 1 - Natalia Crespo Ayala - 12 de octubre de 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
