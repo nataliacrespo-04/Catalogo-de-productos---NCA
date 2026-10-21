@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Salteneria El Horno</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Salteñeria El Horno</h1>
+        <p>Preparamos salteñas y refrescos para compartir en cualquier momento del día.</p>
+    </header>
+
+    <main>
+        <form id="form-horno" novalidate method="POST" action="procesar.php">
+
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="pedido">Qué salteñas querés:</label>
+            <textarea id="pedido" name="pedido"></textarea>
+
+            <button type="submit">Hacer mi pedido</button>
+
+            <p id="aviso-horno" class="aviso"></p>
+
+        </form>
+    </main>
+
+    <footer>
+        Parcial 2 - Natalia Crespo Ayala - 20 de octubre de 2026
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
