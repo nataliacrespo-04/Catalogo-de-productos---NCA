@@ -1,0 +1,209 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f7;
+    color: #4a3035;
+    margin: 0;
+}
+
+header {
+    background-color: #f8b6c8;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a3035;
+    font-weight: bold;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tarjeta {
+    background-color: #fff0f3;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 8px #d8b8c0;
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+}
+
+.tarjeta p:last-child {
+    font-weight: bold;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d8b8c0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 25px;
+    background-color: #e88fa8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d87894;
+}
+
+footer {
+    background-color: #f8b6c8;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Modo oscuro */
+
+body.oscuro {
+    background-color: #1e293b;
+    color: #f1f5f9;
+}
+
+body.oscuro header,
+body.oscuro footer {
+    background-color: #334155;
+    color: #f1f5f9;
+}
+
+body.oscuro nav a {
+    color: #f1f5f9;
+}
+
+body.oscuro section {
+    background-color: #273449;
+    color: #f1f5f9;
+}
+
+body.oscuro .tarjeta {
+    background-color: #334155;
+    color: #f1f5f9;
+    box-shadow: 0 3px 8px #111827;
+}
+
+body.oscuro input,
+body.oscuro select,
+body.oscuro textarea {
+    background-color: #334155;
+    color: #f1f5f9;
+    border: 1px solid #94a3b8;
+}
+
+body.oscuro button {
+    background-color: #7c3aed;
+}
+
+body.oscuro button:hover {
+    background-color: #6d28d9;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        width: 90%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .contenedor-tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
