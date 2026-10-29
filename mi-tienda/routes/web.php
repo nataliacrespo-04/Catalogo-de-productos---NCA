@@ -4,6 +4,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\Juguete;
+use App\Models\Torta;
 
 
 Route::get('/', function () {
@@ -22,7 +23,6 @@ Route::post('/pedidos', function (Request $request) {
         'mensaje' => 'nullable|string|max:1000',
     ]);
 
-    // Por ahora validamos el pedido, pero no lo guardamos en la base de datos.
     return redirect('/')
         ->with('exito', '¡Tu pedido fue recibido correctamente!');
 })->name('pedidos.store');
@@ -57,3 +57,38 @@ Route::post('/juguetes/nuevo', function () {
     return redirect('/juguetes');
 });
 
+
+
+
+Route::get('/tortas', function () {
+    $tortas = Torta::all();
+
+    return view('tortas', compact('tortas'));
+});
+
+Route::get('/tortas/nueva', function () {
+    return view('nueva-torta');
+});
+
+Route::post('/tortas', function (Request $request) {
+    $request->validate([
+        'nombre' => 'required|string|max:100',
+        'precio' => 'required|integer|min:1',
+        'stock' => 'required|integer|min:0',
+    ], [
+        'nombre.required' => 'Debes ingresar el nombre de la torta.',
+        'precio.required' => 'Debes ingresar el precio.',
+        'precio.integer' => 'El precio debe ser un número entero.',
+        'stock.required' => 'Debes ingresar el stock.',
+        'stock.integer' => 'El stock debe ser un número entero.',
+        'stock.min' => 'El stock no puede ser negativo.',
+    ]);
+
+    Torta::create([
+        'nombre' => $request->nombre,
+        'precio' => $request->precio,
+        'stock' => $request->stock,
+    ]);
+
+    return redirect('/tortas')->with('exito', 'Torta agregada correctamente.');
+});
